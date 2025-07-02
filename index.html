@@ -169,6 +169,27 @@
       margin: 0 8px;
     }
 
+    /* Toggle Button oben rechts fixieren */
+    #toggle-theme {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #7289da;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    #toggle-theme:hover {
+      background-color: #5b6eae;
+    }
+
     /* Responsive */
     @media(max-width: 600px) {
       header h1 {
@@ -196,7 +217,7 @@
     Ein freundlicher Ort zum Entspannen, Quatschen und gemeinsamen Spielen – auf Englisch und Deutsch!</p>
   </header>
 
-  <button id="toggle-theme" aria-label="Toggle Dark/Light Mode" style="margin: 10px auto; display: block; padding: 10px 20px; border: none; border-radius: 20px; background-color: #7289da; color: white; cursor: pointer;">
+  <button id="toggle-theme" aria-label="Toggle Dark/Light Mode">
     Switch to Light Mode
   </button>
 

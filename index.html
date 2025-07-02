@@ -46,8 +46,10 @@
       margin-bottom: 10px;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #b9bbbe;
+      max-width: 700px;
+      margin: auto;
     }
 
     /* Join Button */
@@ -79,7 +81,7 @@
       background-color: #23272a;
       border-radius: 15px;
       padding: 25px;
-      flex: 1 1 250px;
+      flex: 1 1 280px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.4);
       transition: transform 0.3s ease;
       text-align: center;
@@ -105,11 +107,18 @@
       color: #99aab5;
       border-top: 2px solid #7289da;
     }
+    footer a {
+      margin: 0 8px;
+    }
 
     /* Responsive */
     @media(max-width: 600px) {
       header h1 {
         font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+        padding: 0 10px;
       }
       .join-btn {
         padding: 12px 30px;
@@ -125,30 +134,46 @@
 <body>
   <header>
     <h1>Your Discord Server</h1>
-    <p>A friendly place to chill, chat, and game together in English!</p>
+    <p>A friendly place to chill, chat, and game together in English and German! <br />
+    Ein freundlicher Ort zum Entspannen, Quatschen und gemeinsamen Spielen – auf Englisch und Deutsch!</p>
   </header>
 
   <div class="container">
-    <a href="https://discord.gg/FRPangXYhy" target="_blank" class="join-btn">Join Our Discord</a>
+    <a href="https://discord.gg/FRPangXYhy" target="_blank" class="join-btn" aria-label="Join Our Discord Server">
+      Join Our Discord / Trete unserem Discord bei
+    </a>
 
-    <section class="features">
+    <section class="features" aria-label="Server Features">
       <div class="feature">
-        <h3>🎮 Gaming</h3>
-        <p>Play your favorite multiplayer games with friends and meet new gamers.</p>
+        <h3>🎮 Gaming / Spielen</h3>
+        <p>Play your favorite multiplayer games with friends and meet new gamers.<br />
+           Spiele deine Lieblings-Multiplayer-Spiele mit Freunden und lerne neue Gamer kennen.</p>
       </div>
       <div class="feature">
-        <h3>💬 Chat & Voice</h3>
-        <p>Active text and voice channels to hang out, share memes, and talk anytime.</p>
+        <h3>💬 Chat & Voice / Chat & Sprache</h3>
+        <p>Active text and voice channels to hang out, share memes, and talk anytime.<br />
+           Aktive Text- und Sprachkanäle zum Abhängen, Memes teilen und jederzeit Quatschen.</p>
       </div>
       <div class="feature">
-        <h3>😎 Chill Vibes</h3>
-        <p>A friendly, respectful community with events and game nights for all.</p>
+        <h3>😎 Chill Vibes / Entspannte Atmosphäre</h3>
+        <p>A friendly, respectful community with events and game nights for all.<br />
+           Eine freundliche, respektvolle Community mit Events und Spielabenden für alle.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 International</h3>
+        <p>Connect with people from around the world in both English and German.<br />
+           Verbinde dich mit Leuten weltweit auf Englisch und Deutsch.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Make Friends / Freunde finden</h3>
+        <p>Join a supportive community where you can meet and make lasting friendships.<br />
+           Tritt einer unterstützenden Community bei, um dauerhafte Freundschaften zu schließen.</p>
       </div>
     </section>
   </div>
 
   <footer>
-    © 2025 Your Discord Server • <a href="#">Rules</a> • <a href="#">Contact</a>
+    © 2025 Your Discord Server • <a href="#">Rules / Regeln</a> • <a href="#">Contact / Kontakt</a>
   </footer>
 </body>
 </html>
